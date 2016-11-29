@@ -22,9 +22,9 @@ var app = {
         this.bindEvents();
         try {
             platformBrowserDynamic().bootstrapModule(AppModule);
-            console.log('Loaded');
+            alert('Loaded');
         }catch (e){
-            console.log('Error: ' + e);
+            alert('Error: ' + e);
         }
     },
     // Bind Event Listeners
