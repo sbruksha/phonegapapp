@@ -21,8 +21,9 @@ var app = {
     initialize: function() {
         this.bindEvents();
         try {
-            platformBrowserDynamic().bootstrapModule(AppModule);
-            alert('Loaded');
+            alert($$("#h1").html());
+            //platformBrowserDynamic().bootstrapModule(AppModule);
+            
         }catch (e){
             alert('Error: ' + e);
         }
