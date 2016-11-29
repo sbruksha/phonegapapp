@@ -22,7 +22,7 @@ var app = {
         this.bindEvents();
         try {
             alert($$("#h1").html());
-            //platformBrowserDynamic().bootstrapModule(AppModule);
+            mybootstrap();
             
         }catch (e){
             alert('Error: ' + e);
