@@ -1,0 +1,21 @@
+{
+  "name": "phonegapapp",
+  "version": "1.0.0",
+  "description": "> RatingSystem with PhoneGap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbruksha/phonegapapp.git"
+  },
+  "author": "RatingSystem",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "bugs": {
+    "url": "https://github.com/sbruksha/phonegapapp/issues"
+  },
+  "homepage": "https://github.com/sbruksha/phonegapapp"
+}
