@@ -20,7 +20,12 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        platformBrowserDynamic().bootstrapModule(AppModule);
+        try {
+            platformBrowserDynamic().bootstrapModule(AppModule);
+            console.log('Loaded');
+        }catch (e){
+            console.log('Error: ' + e);
+        }
     },
     // Bind Event Listeners
     //
