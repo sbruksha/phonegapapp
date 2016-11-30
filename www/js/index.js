@@ -21,9 +21,7 @@ var app = {
     initialize: function() {
         this.bindEvents();
         try {
-            alert($$("#h1").html());
-            run();
-            
+            RunApplication();
         }catch (e){
             alert('Error: ' + e);
         }
