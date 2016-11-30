@@ -22,7 +22,7 @@ var app = {
         this.bindEvents();
         try {
             alert($$("#h1").html());
-            mybootstrap();
+            run();
             
         }catch (e){
             alert('Error: ' + e);
