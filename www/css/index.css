@@ -176,7 +176,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 #rsfooter .navbar-fixed-top,#rsfooter  .navbar-fixed-bottom {position: fixed;right: 0;left: 0;border-width: 0 0 1px;}
 #rsfooter .col-1-4{width:25%;}
 #rsfooter .tcenter {text-align: center;}
-#rsmobile > .rssystem {padding: 10px 15px 0;margin-bottom: 50px;margin-top:50px;}
+#rsmobile > .rssystem {padding: 10px 5px 0;margin-bottom: 50px;margin-top:50px;}
 #rsmobile .navbar-header {float:none;width:100%;text-align: center;}
 #rsmobile .navbar-brand {font-size:20pt;float:none;}
 #rsmobile .navbar-header img {height: 45px;margin-top:20px;}
