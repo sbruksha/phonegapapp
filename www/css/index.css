@@ -224,7 +224,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .action{font-size:12px;top: -35px;position: relative;}
     .rssystem .recorded{position: relative;top:-25px;}
     .rssystem .vrfd {padding:0px;}
-    .rssystem label.rname {top: 5px;}
+    .rssystem label.rname {top: -2px;}
     .rssystem .oname{font-size: 12px;}
     #rsbottomNav a {font-size:8pt;}
     .rssystem .sort{ width: 70px;}
