@@ -20,11 +20,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        try {
-            RunApplication();
-        }catch (e){
-            alert('Error: ' + e);
-        }
     },
     // Bind Event Listeners
     //
@@ -39,6 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        RunApplication();
         window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
