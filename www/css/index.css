@@ -45,7 +45,7 @@
 .rssystem nav a:hover{color:#7A1518;background-color:#ddd}
 .rssystem nav a.active{color:#be2125}
 .rssystem .histogram{display:block;zoom:1;margin-left:6px;width:60px;height:14px;border-radius:0 3px 3px 0;overflow:hidden;﻿top:2px;}
-.rssystem .rater{background:#d9d9d9;}
+.rssystem .rater{background:#d9d9d9;﻿height: 18px;}
 .rssystem .rater-bar{display:block;height:100%;background:url(../images/shred.png) repeat-x #be2125}
 .rssystem .rater,.rssystem .raterr,.rssystem .raters{float:left}
 .rssystem .raterr{width:40px;padding-left:10px}
@@ -181,6 +181,8 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 #rsfooter .iconwritereviews{background-image: url(../images/writereview.png)}
 #rsfooter i {width: 20px;height: 20px;display: inline-block;}
 
+.rssystem .rsmsgr {display: block;background-color: #fff;width: 99.5%;height: 200px;text-align: center;padding: 50px;font-size: 28px;border: 2px solid #ddd;}
+
 @media (max-width:1024px){
     .rssystem .header,.rssystem .reviewsbody{clear:both}
     .rssystem .user{margin-left:90px}
@@ -205,6 +207,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .rssocial {float: none;}
     #rsbottomNav a {font-size:10pt;}
     .rssystem .showmore_content {font-size: 13px;}
+    .rssystem .rsmsgr {font-size: 18px;}
 }
 @media (max-width:401px){
     .rssystem .alltags,.rssystem .header,.rssystem .raction,.rssystem .reviewsbody,.rssystem .user,.rssystem .qt .showmore,.rssystem div.card {margin-left:40px}
@@ -218,7 +221,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .vrfd {padding:0px;}
     .rssystem label.rname {top: 0;}
     .rssystem .oname{font-size: 12px;}
-    #rsbottomNav a {font-size:7pt;}
+    #rsbottomNav a {font-size:8pt;}
     .rssystem .sort{ width: 70px;}
     .rssystem .col-1-3t {width: 100%;text-align: center;padding: 10px 0px;}
     .rssystem .grid-pad>[class*=col-]:last-of-type {padding-right:0;}
