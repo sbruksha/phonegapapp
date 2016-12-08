@@ -10,7 +10,6 @@
 .rssystem h3{border-bottom:4px #be2125 solid;float:left;width: 100%;}
 .rssystem h2{text-align:center;display:none;}
 ﻿.rssystem span, .﻿rslineheight{line-height:normal !important}
-.rssystem .title:before{content:"";height:1px;width:100%;position:absolute;left:0;margin-top:12px;background:#474747}
 .rssystem .atext,.rssystem .histogram,.rssystem .title span,.rssystem div.card,.rssystem h4,.rssystem .startingletter{position:relative}
 .rssystem .title span{background:#fff;padding:0 10px;z-index:99;color:#444}
 .rssystem a{cursor:pointer;cursor:pointer}
@@ -86,7 +85,7 @@
 .rssystem label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700}
 .rssystem label.rname{min-width:130px;top:-12px;}
 .rssystem label.rnames{min-width:130px;top:-6px;font-size:10px;width:150px;}
-.rssystem .rc,.rssystem .rheader{margin-bottom:10px}
+.rssystem .rc,.rssystem .rheader{margin:10px 0px;}
 .rssystem .rssum{display:none}
 .rssystem .rField,.rssystem .rFieldc{display:block;width:100%;padding:6px 12px;color:#555;background-color:#fff;font-size:14px;line-height:1.42857143;background-image:none}
 .rssystem .rField{height:34px;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
@@ -162,7 +161,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 
 #rsmobile {min-height: 100%;height: auto !important;height: 100%;margin: 0 auto -60px;padding: 0 0 60px;overflow: auto;position: relative;}
 #rsmobile .navbar {z-index: 1000;min-height: 50px;margin-bottom: 20px;border: 1px solid transparent;text-align: center;position: fixed;top: 0;left: 0;background-color:#7A1518;width: 100%;color:#fff;}
-#rsfooter {height: 60px;background-color: #f5f5f5;font-style:normal;font-family:"Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;}
+#rsfooter {position:fixed;height: 60px;background-color: #f5f5f5;font-style:normal;font-family:"Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;}
 #rsfooter .navbar-inverse {background-color: #7A1518;border-color: #c36567;width:100%;}
 #rsfooter .navbar-fixed-bottom {bottom: 0;margin-bottom: 0;}
 #rsfooter .navbar-fixed-top,#rsfooter  .navbar-fixed-bottom {position: fixed;right: 0;left: 0;border-width: 0 0 1px;}
@@ -211,6 +210,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .showmore_content {font-size: 13px;}
     .rssystem .rsmsgr {font-size: 18px;}
     .rssystem .rFieldc{height:34px;}
+    .startingletter .label span {font-size: 18px !important;}
 }
 @media (max-width:401px){
     .rssystem .alltags,.rssystem .header,.rssystem .raction,.rssystem .reviewsbody,.rssystem .user,.rssystem .qt .showmore,.rssystem div.card {margin-left:40px}
@@ -219,17 +219,17 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .startingletter .check{left:20px;top:20px;width:15px;height:15px;font-size:14px;padding-left:2px}
     .rssystem .startingletter .label{font-size:15px}
     .rssystem .atext{top:0;font-size:10px}
-    .rssystem .action{font-size:12px;top: -35px;position: relative;}
+    .rssystem .action{font-size:12px;position: relative;}
     .rssystem .recorded{position: relative;top:-25px;}
     .rssystem .vrfd {padding:0px;}
-    .rssystem label.rname {top: 0;}
+    .rssystem label.rname {top: -4px;}
     .rssystem .oname{font-size: 12px;}
-    #rsbottomNav a {font-size:7pt;}
+    #rsbottomNav a {font-size:6pt;}
     .rssystem .sort{ width: 70px;}
     .rssystem .col-1-3t {width: 100%;text-align: center;padding: 10px 0px;}
     .rssystem .grid-pad>[class*=col-]:last-of-type {padding-right:0;}
     .rssystem .ratesum {display: inline-block;}
-    .rssystem .rsvideo{width:100%;height:200px;}
+    .rssystem .rsvideo{width:100%;height:170px;}
 }
 @media (max-width:350px){.rssystem label.rname,.rssystem label.rnames{top:0}}
 @media screen and (min-width:0\0){.rssystem .sort{background:0 0;padding:5px}}
