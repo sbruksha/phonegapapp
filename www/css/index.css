@@ -178,7 +178,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 #rsfooter .iconquestions{background-image: url(../images/questions.png)}
 #rsfooter .iconreviews{background-image: url(../images/reviews.png)}
 #rsfooter .iconwritereviews{background-image: url(../images/writereview.png)}
-#rsfooter i {width: 32px;height: 32px;display: inline-block;}
+#rsfooter i {width: 32px;height: 32px;display: inline-block;margin-bottom: -4px;}
 #rsfooter div.active{background-color: #a52424;}
 #rsfooter div [class*=col-]{padding-right:0px;padding-bottom:0px;padding-top:7px;}
 
