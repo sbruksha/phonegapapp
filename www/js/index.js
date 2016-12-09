@@ -41,7 +41,7 @@ var app = {
     onResume: function() {
         //app.receivedEvent('resume');
         RunApplication();
-        //window.open = cordova.InAppBrowser.open;
+        window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
