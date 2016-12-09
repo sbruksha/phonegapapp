@@ -171,16 +171,18 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 #rsmobile .navbar-header {float:none;width:100%;text-align: center;}
 #rsmobile .navbar-brand {font-size:20pt;float:none;}
 #rsmobile .navbar-header img {height: 45px;margin-top:20px;}
-#rsbottomNav {padding:10px;}
+#rsbottomNav {}
 #rsbottomNav a {font-size:20pt;color:#ddd;text-decoration:none;}
 #rsbottomNav a:hover {color:#fff;}
 #rsfooter .iconaskquestions{background-image: url(../images/askquestion.png)}
 #rsfooter .iconquestions{background-image: url(../images/questions.png)}
 #rsfooter .iconreviews{background-image: url(../images/reviews.png)}
 #rsfooter .iconwritereviews{background-image: url(../images/writereview.png)}
-#rsfooter i {width: 20px;height: 20px;display: inline-block;}
+#rsfooter i {width: 32px;height: 32px;display: inline-block;}
+#rsfooter div.active{background-color: #a52424;}
+#rsfooter div [class*=col-]{padding-right:0px;padding-bottom:0px;padding-top:7px;}
 
-.rssystem .rsmsgr {display: block;background-color: #fff;width: 99.5%;height: 200px;text-align: center;padding: 50px;font-size: 28px;border: 2px solid #ddd;}
+.rssystem .rsmsgr {display: block;background-color: #fff;width: 99.5%;height: 200px;text-align: center;padding: 50px;font-size: 28px;border: 4px solid #eee;border-radius: 3px;}
 .rssystem .rsvideo{border:1px solid #E8E8E8;width:320px;height:200px;}
 .rssystem .rsvideos{display:block;}
 .rssystem .rsvid{display:inline-block;}

@@ -27,15 +27,21 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('resume', this.onResume, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        //app.receivedEvent('deviceready');
         RunApplication();
         window.open = cordova.InAppBrowser.open;
+    },
+    onResume: function() {
+        //app.receivedEvent('resume');
+        RunApplication();
+        //window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
