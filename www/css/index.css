@@ -186,6 +186,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 .rssystem .rsvideo{border:1px solid #E8E8E8;width:320px;height:200px;}
 .rssystem .rsvideos{display:block;}
 .rssystem .rsvid{display:inline-block;}
+.rssystem share{float: left;width: 50px;overflow: visible}
 @media (max-width:1024px){
     .rssystem .header,.rssystem .reviewsbody{clear:both}
     .rssystem .user{margin-left:90px}
@@ -221,7 +222,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .startingletter .check{left:20px;top:20px;width:15px;height:15px;font-size:14px;padding-left:2px}
     .rssystem .startingletter .label{font-size:15px}
     .rssystem .atext{top:0;font-size:10px}
-    .rssystem .action{font-size:12px;position: relative;}
+    .rssystem .action{font-size:12px;position: relative;overflow: visible;float: right;}
     .rssystem .recorded{position: relative;top:-25px;}
     .rssystem .vrfd {padding:0px;}
     .rssystem label.rname {top: -4px;}
@@ -232,6 +233,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
     .rssystem .grid-pad>[class*=col-]:last-of-type {padding-right:0;}
     .rssystem .ratesum {display: inline-block;}
     .rssystem .rsvideo{width:100%;height:170px;}
+    .rssystem .tii {padding:4px;}
 }
-@media (max-width:350px){.rssystem label.rname,.rssystem label.rnames{top:0}}
+@media (max-width:350px){.rssystem label.rname,.rssystem label.rnames{top:0}.rssystem .tii {background:none;padding:0px;}}
 @media screen and (min-width:0\0){.rssystem .sort{background:0 0;padding:3px}}
