@@ -11,7 +11,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
 
-    <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
@@ -85,5 +85,5 @@
     </platform>
     <access origin="*" />
     <allow-intent href="*" />
-    
+
 </widget>
