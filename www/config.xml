@@ -29,7 +29,7 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.5.0" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -102,8 +102,6 @@
     </platform>
     <access origin="*" />
     <allow-intent href="*" />
-
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />
 
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
