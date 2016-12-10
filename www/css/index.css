@@ -12,7 +12,7 @@
 ﻿.rssystem span, .﻿rslineheight{line-height:normal !important}
 .rssystem .atext,.rssystem .histogram,.rssystem .title span,.rssystem div.card,.rssystem h4,.rssystem .startingletter{position:relative}
 .rssystem .title span{background:#fff;padding:0 10px;z-index:99;color:#444}
-.rssystem a{cursor:pointer;cursor:pointer}
+.rssystem a{cursor:pointer;}
 .rssystem button{background-color:#eee;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;cursor:pointer}
 .rssystem button:hover{background-color:#cfd8dc}
 .rssystem button:disabled{background-color:#eee;color:#aaa;cursor:auto}
@@ -111,7 +111,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 .social-likes_visible{opacity:1;transition:opacity .1s ease-in}.social-likes>*{display:inline-block;}.social-likes_vertical>*{display:block}.social-likes_visible>*{visibility:inherit}
 .social-likes{min-height:36px;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);line-height:1.5;font-size:14px}
 .icon-title{position:relative;top:-5px}.share-title{top:-4px;position:relative;padding:0 4px;font-size: 12px;}.social-likes-share{cursor:pointer;border:1px solid #ddd;width:80px;text-align:center;background-color:#dfdddd;border-radius:4px}.icon-facebook,.icon-social,.icon-twitter{width:25px;height:25px;display:inline-block;text-indent:-9999px;background-repeat:no-repeat}.social-share{position:absolute;top:-88px;border:1px solid #ddd;left:-20px;padding:10px;background-color:#fff;z-index:100}.fshare,.fshare a.click{background-color:#5D7DAE}.icon-social{background-image:url(../images/share.png);vertical-align:text-bottom;background-position:0px;}.icon-facebook{background-image:url(../images/facebook.png);vertical-align:text-bottom;background-position:0px;}.icon-twitter{background-image:url(../images/twitter.png);vertical-align:text-bottom;background-position:0px;}.fshare a.click,.tshare a.click{font-size:13px;color:#fff;border:1px solid #FFF;text-decoration:none;width:100px;display:block}.fshare{width:100px}.fshare a.click{cursor:pointer}.tshare{background-color:#1b95e0;width:100px}.tshare a.click{background-color:#1b95e0;cursor: pointer}
-.social-likes-share:hover {background-color: #807f7f;}
+
 .progress {height: 16px;width: 100px;overflow: hidden;background-color: #f5f5f5;border-radius: 2px;-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);}
 .progress-bar-warning {background-color: #f0ad4e;}
 .progress-bar {float: left;width: 0;height: 100%;font-size:12px;line-height: 20px;color: #fff;text-align: center;background-color: #be2125;-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);-webkit-transition: width .6s ease;-o-transition: width .6s ease;transition: width .6s ease;}
@@ -186,7 +186,7 @@ div.smallstars div.rateit-range{background:url(../images/star-white20.png);heigh
 .rssystem .rsvideo{border:1px solid #E8E8E8;width:320px;height:200px;}
 .rssystem .rsvideos{display:block;}
 .rssystem .rsvid{display:inline-block;}
-.rssystem share{float: left;width: 50px;overflow: visible}
+.rssystem .wwshare{float: left;width: 50px;overflow: visible}
 @media (max-width:1024px){
     .rssystem .header,.rssystem .reviewsbody{clear:both}
     .rssystem .user{margin-left:90px}
