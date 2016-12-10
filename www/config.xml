@@ -167,8 +167,6 @@
         <allow-intent href="itms-apps:*" />
     </platform -->
     <allow-intent href="*" />
-
-    <allow-navigation href="*" />
-
+    
 </widget>
 
