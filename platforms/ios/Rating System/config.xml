@@ -52,9 +52,6 @@
     <feature name="Globalization">
         <param name="ios-package" value="CDVGlobalization" />
     </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
     <feature name="Media">
         <param name="ios-package" value="CDVSound" />
     </feature>
@@ -128,4 +125,7 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="android-minSdkVersion" value="14" />
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
 </widget>

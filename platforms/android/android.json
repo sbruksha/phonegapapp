@@ -35,6 +35,6 @@
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-inappbrowser": "1.6.1-dev"
+        "cordova-plugin-inappbrowser": "1.5.0"
     }
 }
