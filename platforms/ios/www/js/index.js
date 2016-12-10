@@ -26,7 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        //document.addEventListener('resume', this.onResume, false);
+        document.addEventListener('resume', this.onResume, false);
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -40,8 +40,8 @@ var app = {
     },
     onResume: function() {
         //app.receivedEvent('resume');
-        //RunApplication();
-        //window.open = cordova.InAppBrowser.open;
+        RunApplication();
+        window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
