@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sbruksha/phonegapapp/issues"
   },
-  "homepage": "https://github.com/sbruksha/phonegapapp"
+  "homepage": "https://github.com/sbruksha/phonegapapp",
+  "dependencies": {
+    "cordova-custom-config": "^3.1.2"
+  }
 }

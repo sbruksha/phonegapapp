@@ -1,0 +1,79 @@
+{
+  "version": "3.1.2",
+  "name": "cordova-custom-config",
+  "cordova_name": "cordova-custom-config",
+  "description": "Cordova/Phonegap plugin to update platform configuration files based on preferences and config-file data defined in config.xml.",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpa99c/cordova-custom-config.git"
+  },
+  "cordova": {
+    "id": "cordova-custom-config",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "issue": "https://github.com/dpa99c/cordova-custom-config/issues",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "cordova-android",
+    "cordova-ios",
+    "phonegap",
+    "config",
+    "configuration",
+    "plist",
+    "manifest"
+  ],
+  "dependencies": {
+    "lodash": "^4.3.0",
+    "elementtree": "^0.1.6",
+    "plist": "^1.2.0",
+    "xcode": "^0.8.9",
+    "colors": "^1.1.2",
+    "shelljs": "^0.7.0",
+    "tostr": "^0.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "got": "^6.5.0"
+  },
+  "scripts": {
+    "test": "jshint hooks"
+  },
+  "gitHead": "a917bb41dc25b582e1a9ab79d1793339b55f4bc3",
+  "bugs": {
+    "url": "https://github.com/dpa99c/cordova-custom-config/issues"
+  },
+  "homepage": "https://github.com/dpa99c/cordova-custom-config#readme",
+  "_id": "cordova-custom-config@3.1.2",
+  "_shasum": "63382b2920e2da7d46f607bace3411baf3f976df",
+  "_from": "cordova-custom-config@latest",
+  "_npmVersion": "3.10.9",
+  "_nodeVersion": "7.1.0",
+  "_npmUser": {
+    "name": "davealden",
+    "email": "dave@workingedge.co.uk"
+  },
+  "dist": {
+    "shasum": "63382b2920e2da7d46f607bace3411baf3f976df",
+    "tarball": "https://registry.npmjs.org/cordova-custom-config/-/cordova-custom-config-3.1.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "davealden",
+      "email": "dave@workingedge.co.uk"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-custom-config-3.1.2.tgz_1480760661207_0.725297458935529"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-custom-config/-/cordova-custom-config-3.1.2.tgz"
+}

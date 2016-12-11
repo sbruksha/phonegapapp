@@ -13,7 +13,8 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-inappbrowser": "1.5.0"
+    "cordova-plugin-inappbrowser": "1.5.0",
+    "cordova-custom-config": "3.1.2"
 };
 // BOTTOM OF METADATA
 });
