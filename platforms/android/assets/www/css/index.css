@@ -12,7 +12,7 @@
 ﻿.rssystem span, .﻿rslineheight{line-height:normal !important}
 .rssystem .atext,.rssystem .histogram,.rssystem .title span,.rssystem div.card,.rssystem h4,.rssystem .startingletter{position:relative}
 .rssystem .title span{background:#fff;padding:0 10px;z-index:99;color:#444}
-.rssystem a{cursor:pointer;cursor:pointer}
+.rssystem a{cursor:pointer;}
 .rssystem button{background-color:#eee;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;cursor:pointer}
 .rssystem button:hover{background-color:#cfd8dc}
 .rssystem button:disabled{background-color:#eee;color:#aaa;cursor:auto}

@@ -12,6 +12,9 @@
         },
         "cordova-custom-config": {
             "PACKAGE_NAME": "com.eodessa.ratingsystem"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.eodessa.ratingsystem"
         }
     },
     "dependent_plugins": {}

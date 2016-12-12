@@ -35,13 +35,13 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-        window.open = cordova.InAppBrowser.open;
         RunApplication();
+        window.open = cordova.InAppBrowser.open;
     },
     onResume: function() {
         //app.receivedEvent('resume');
         RunApplication();
-        window.open = cordova.InAppBrowser.open;
+        //window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
