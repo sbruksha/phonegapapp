@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		002395F0121F478FA86B4D5D /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E8B6F37657421294DD8410 /* CDVCompass.m */; };
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
@@ -43,7 +42,6 @@
 		B9087594339F4590831F3044 /* CDVContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5645C55756CC4DBDB6073C5B /* CDVContacts.m */; };
 		BA25A4F890E84EFFB2397BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE8C4C0980043C498C2A1A0 /* CoreLocation.framework */; };
 		BA6B206A607B4BF2A3FB558E /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52F3359A0C4D57BC397876 /* CDVReachability.m */; };
-		BCDE8AB09FD54F63B68E350A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3ED74B0E214A77A82BDB53 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BD7095BF576D4C54BD38DB02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A96544F2D30471FB3C41BFE /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BDF0B303158C4672A5326270 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BFF4F8356C45708B8877BD /* CDVSplashScreen.m */; };
 		CB2A2F67FE1E45FDA3AE5E9F /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 787B10E1101046E6A2DAA036 /* CDVInAppBrowser.m */; };
@@ -51,6 +49,11 @@
 		E9368FB435D54D9F9A784C07 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A52549AA78142F6A6484AEB /* CDVNotification.m */; };
 		F3CBFA5187B540B1929B9CB1 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE5EE732D55413581554B73 /* CDVAccelerometer.m */; };
 		FD4CD83713F544C69FF14A60 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3330EB5113F44C01AF0DF3D5 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		08D09F6B7CCD47BD8FD6D429 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D135BCFD9745498BB70054 /* AppDelegate+notification.m */; };
+		73A1C9D4BA104BFA8C793DFD /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9713FB1C3D484B9B462E5B /* PushPlugin.m */; };
+		2A9D413305BF4DFABCB40886 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F01D5CEB6446D98AD468C9 /* AddressBook.framework */; };
+		71AE6577573947F7A5EE123C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36959F44F7A346B5B0D30364 /* libsqlite3.tbd */; };
+		8BA8CFF416A84F0798F7CDDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CC264208A640B4A6BA3A24 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +123,6 @@
 		6A67BC5666F84B8B93D1BDE3 /* CDVCompass.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVCompass.h; path = "cordova-plugin-device-orientation/CDVCompass.h"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Rating System/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		6B67A07B50024A3A86698C74 /* CDVLocation.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
-		6E3ED74B0E214A77A82BDB53 /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		6F6DA7576E094C5B891AAABB /* CDVNotification.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
 		6FD255403F0F41A0B201BDA5 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocalFilesystem.h; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; };
 		75E8B6F37657421294DD8410 /* CDVCompass.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVCompass.m; path = "cordova-plugin-device-orientation/CDVCompass.m"; sourceTree = "<group>"; };
@@ -156,6 +158,13 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F3536E1608E8460F8AB72186 /* CDVCamera.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVCamera.m; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Rating System/config.xml"; sourceTree = "<group>"; };
+		B2D135BCFD9745498BB70054 /* AppDelegate+notification.m */ = {isa = PBXFileReference; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9A9713FB1C3D484B9B462E5B /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		FF328E8DFE384615BA8D56BD /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B174AA4F0005497AA6075459 /* PushPlugin.h */ = {isa = PBXFileReference; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A0F01D5CEB6446D98AD468C9 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		36959F44F7A346B5B0D30364 /* libsqlite3.tbd */ = {isa = PBXFileReference; name = "libsqlite3.tbd"; path = "usr/lib/libsqlite3.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		A4CC264208A640B4A6BA3A24 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,12 +176,14 @@
 				6D17398FDFE84AE9B47F98E4 /* ImageIO.framework in Frameworks */,
 				BA25A4F890E84EFFB2397BA6 /* CoreLocation.framework in Frameworks */,
 				1A1EE01F14B647EFA80C1E92 /* AVFoundation.framework in Frameworks */,
-				BCDE8AB09FD54F63B68E350A /* AddressBook.framework in Frameworks */,
 				9503913E067240A3BBDEF5E2 /* AddressBookUI.framework in Frameworks */,
 				8FC1864073964E1BBD2629CA /* CoreMotion.framework in Frameworks */,
 				FD4CD83713F544C69FF14A60 /* AudioToolbox.framework in Frameworks */,
 				BD7095BF576D4C54BD38DB02 /* SystemConfiguration.framework in Frameworks */,
 				607B78117B5D4925950EB66B /* CoreTelephony.framework in Frameworks */,
+				2A9D413305BF4DFABCB40886 /* AddressBook.framework in Frameworks */,
+				71AE6577573947F7A5EE123C /* libsqlite3.tbd in Frameworks */,
+				8BA8CFF416A84F0798F7CDDE /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,12 +260,14 @@
 				177FA9C65C9D421293ECDD84 /* ImageIO.framework */,
 				BFE8C4C0980043C498C2A1A0 /* CoreLocation.framework */,
 				0375997276BC482C80759CAC /* AVFoundation.framework */,
-				6E3ED74B0E214A77A82BDB53 /* AddressBook.framework */,
 				A86ED529040B4005A6F2164F /* AddressBookUI.framework */,
 				837412221C2E4D1DA5088D94 /* CoreMotion.framework */,
 				3330EB5113F44C01AF0DF3D5 /* AudioToolbox.framework */,
 				8A96544F2D30471FB3C41BFE /* SystemConfiguration.framework */,
 				D56D0416E1FA402D95E0FA67 /* CoreTelephony.framework */,
+				A0F01D5CEB6446D98AD468C9 /* AddressBook.framework */,
+				36959F44F7A346B5B0D30364 /* libsqlite3.tbd */,
+				A4CC264208A640B4A6BA3A24 /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,6 +346,10 @@
 				B16CC27F14A84C25B020B1A1 /* CDVVibration.h */,
 				787B10E1101046E6A2DAA036 /* CDVInAppBrowser.m */,
 				887B976E4FF9404D9B2FC14B /* CDVInAppBrowser.h */,
+				B2D135BCFD9745498BB70054 /* AppDelegate+notification.m */,
+				9A9713FB1C3D484B9B462E5B /* PushPlugin.m */,
+				FF328E8DFE384615BA8D56BD /* AppDelegate+notification.h */,
+				B174AA4F0005497AA6075459 /* PushPlugin.h */,
 			);
 			name = Plugins;
 			path = "Rating System/Plugins";
@@ -487,6 +504,8 @@
 				ADDACD0CFF2D4ADCA7D20DBA /* CDVStatusBar.m in Sources */,
 				3DC87947D5144F5FB5D7914E /* CDVVibration.m in Sources */,
 				CB2A2F67FE1E45FDA3AE5E9F /* CDVInAppBrowser.m in Sources */,
+				08D09F6B7CCD47BD8FD6D429 /* AppDelegate+notification.m in Sources */,
+				73A1C9D4BA104BFA8C793DFD /* PushPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

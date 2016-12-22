@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/sbruksha/phonegapapp",
   "dependencies": {
-    "cordova-custom-config": "^3.1.2"
+    "cordova-custom-config": "^3.1.2",
+    "phonegap-plugin-push": "^1.8.1"
   }
 }
