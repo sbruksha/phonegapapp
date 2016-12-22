@@ -96,6 +96,7 @@
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* Rating System-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rating System-Prefix.pch"; sourceTree = "<group>"; };
 		3330EB5113F44C01AF0DF3D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		338CAABD1E0B59B900364F42 /* Rating System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Rating System.entitlements"; path = "Rating System/Rating System.entitlements"; sourceTree = "<group>"; };
 		38C4F00DEB8C4664B93AEB3A /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocalFilesystem.m; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; };
 		3A52549AA78142F6A6484AEB /* CDVNotification.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; };
 		3ACDB591B8494F248BC4E31A /* CDVFile.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVFile.m; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				338CAABD1E0B59B900364F42 /* Rating System.entitlements */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
@@ -378,6 +380,11 @@
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = ZZJ9GDNM2M;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -503,6 +510,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "Rating System/Rating System.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -518,8 +526,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "Rating System";
-				PROVISIONING_PROFILE = "fb42d04c-5f9e-4505-9531-b31edcfd28e2";
-				PROVISIONING_PROFILE_SPECIFIER = "Dev provisioning profile";
+				PROVISIONING_PROFILE = "1b22873d-fab9-4dda-9a90-9463aea6c4db";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev RatingSystem provisioning";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -533,6 +541,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "Rating System/Rating System.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
@@ -546,8 +555,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "Rating System";
-				PROVISIONING_PROFILE = "a7df80c6-3cc9-499b-a578-8716578be0a4";
-				PROVISIONING_PROFILE_SPECIFIER = "Prod provisioning profile";
+				PROVISIONING_PROFILE = "892ab666-4aaa-4cc3-ba4a-a70d602eccf9";
+				PROVISIONING_PROFILE_SPECIFIER = "Prod RatingSystem provisioning";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
