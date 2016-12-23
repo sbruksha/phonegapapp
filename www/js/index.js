@@ -56,12 +56,23 @@ var app = {
         push.on('registration', function(data) {
             console.log('registration event: ' + data.registrationId);
 
-            var oldRegId = localStorage.getItem('registrationId');
-            if (oldRegId !== data.registrationId) {
-                // Save new registration ID
-                localStorage.setItem('registrationId', data.registrationId);
-                // Post registrationId to your app server as the value has changed
-            }
+            //var oldRegId = localStorage.getItem('registrationId');
+            //if (oldRegId !== data.registrationId) {
+            // Save new registration ID
+            //localStorage.setItem('registrationId', data.registrationId);
+            // Post registrationId to your app server as the value has changed
+
+            var u = "https://www.rating-system.com/webservice/RatingService.svc/SubscribeToNotification";
+            $$.ajax({
+                type: "POST", url: u, data: "{\"Company\":\"1\",\"Endpoint\":\"" + data.registrationId + "\",\"Type\":\"ADM\"}", contentType: "application/json; charset=utf-8", dataType: "json",
+                success: function (data) {
+                    console.log(data.MessageText);
+                },
+                error: function (error) {
+                    console.log('Error:'+JSON.stringify(error));
+                }
+            });
+            //}
 
             // var parentElement = document.getElementById('registration');
             // var listeningElement = parentElement.querySelector('.waiting');
@@ -72,11 +83,10 @@ var app = {
         });
 
         push.on('error', function(e) {
-            alert("push error = " + e.message);
+            console.log("push error = " + e.message);
         });
 
         push.on('notification', function(data) {
-            console.log('notification event');
             navigator.notification.alert(
                 data.message,         // message
                 null,                 // callback
