@@ -26,7 +26,6 @@
     "phonegap-plugin-push": {
         "source": {
             "type": "registry",
-<<<<<<< HEAD
             "id": "phonegap-plugin-push@1.9.2"
         },
         "is_top_level": true,
@@ -38,9 +37,6 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-dialogs"
-=======
-            "id": "phonegap-plugin-push@1.8.1"
->>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
         },
         "is_top_level": true,
         "variables": {}

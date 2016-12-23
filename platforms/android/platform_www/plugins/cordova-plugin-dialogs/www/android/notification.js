@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 cordova.define("cordova-plugin-dialogs.notification_android", function(require, exports, module) {
-=======
->>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -76,8 +73,5 @@ module.exports = {
         exec(null, null, 'Notification', 'progressValue', [ value ]);
     }
 };
-<<<<<<< HEAD
 
 });
-=======
->>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec

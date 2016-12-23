@@ -1,21 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 var app = {
     // Application Constructor
     initialize: function() {
@@ -37,6 +19,7 @@ var app = {
         //app.receivedEvent('deviceready');
         RunApplication();
         window.open = cordova.InAppBrowser.open;
+        app.setupPush();
     },
     onResume: function() {
         //app.receivedEvent('resume');
@@ -53,5 +36,63 @@ var app = {
         // receivedElement.setAttribute('style', 'display:block;');
         //
         // console.log('Received Event: ' + id);
+    },
+    setupPush: function() {
+        console.log('calling push init');
+        var push = PushNotification.init({
+            "android": {
+                "senderID": "﻿80173982660"
+            },
+            "browser": {},
+            "ios": {
+                "sound": true,
+                "vibration": true,
+                "badge": true
+            },
+            "windows": {}
+        });
+        console.log('after init');
+
+        push.on('registration', function(data) {
+            console.log('registration event: ' + data.registrationId);
+
+            //var oldRegId = localStorage.getItem('registrationId');
+            //if (oldRegId !== data.registrationId) {
+            // Save new registration ID
+            //localStorage.setItem('registrationId', data.registrationId);
+            // Post registrationId to your app server as the value has changed
+
+            var u = "https://www.rating-system.com/webservice/RatingService.svc/SubscribeToNotification";
+            $$.ajax({
+                type: "POST", url: u, data: "{\"Company\":\"1\",\"Endpoint\":\"" + data.registrationId + "\",\"Type\":\"ADM\"}", contentType: "application/json; charset=utf-8", dataType: "json",
+                success: function (data) {
+                    console.log(data.MessageText);
+                },
+                error: function (error) {
+                    console.log('Error:'+JSON.stringify(error));
+                }
+            });
+            //}
+
+            // var parentElement = document.getElementById('registration');
+            // var listeningElement = parentElement.querySelector('.waiting');
+            // var receivedElement = parentElement.querySelector('.received');
+            //
+            // listeningElement.setAttribute('style', 'display:none;');
+            // receivedElement.setAttribute('style', 'display:block;');
+        });
+
+        push.on('error', function(e) {
+            console.log("push error = " + e.message);
+        });
+
+        push.on('notification', function(data) {
+            navigator.notification.alert(
+                data.message,         // message
+                null,                 // callback
+                data.title,           // title
+                'Ok'                  // buttonName
+            );
+        });
     }
 };
