@@ -4,7 +4,6 @@ var app = {
         this.bindEvents();
     },
     // Bind Event Listeners
-    //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
@@ -12,7 +11,6 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
-    //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
@@ -31,14 +29,15 @@ var app = {
         // var parentElement = document.getElementById(id);
         // var listeningElement = parentElement.querySelector('.listening');
         // var receivedElement = parentElement.querySelector('.received');
-        //
         // listeningElement.setAttribute('style', 'display:none;');
         // receivedElement.setAttribute('style', 'display:block;');
-        //
         // console.log('Received Event: ' + id);
     },
     setupPush: function() {
+<<<<<<< HEAD
         console.log('calling push init');
+=======
+>>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
         var push = PushNotification.init({
             "android": {
                 "senderID": "﻿80173982660"
@@ -51,6 +50,7 @@ var app = {
             },
             "windows": {}
         });
+<<<<<<< HEAD
         console.log('after init');
 
         push.on('registration', function(data) {
@@ -73,6 +73,17 @@ var app = {
                     }
                 });
             //}
+=======
+        push.on('registration', function(data) {
+            ﻿alert('registration event: ' + data.registrationId);
+
+            var oldRegId = localStorage.getItem('registrationId');
+            if (oldRegId !== data.registrationId) {
+                // Save new registration ID
+                localStorage.setItem('registrationId', data.registrationId);
+                // Post registrationId to your app server as the value has changed
+            }
+>>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
 
             // var parentElement = document.getElementById('registration');
             // var listeningElement = parentElement.querySelector('.waiting');
@@ -83,10 +94,18 @@ var app = {
         });
 
         push.on('error', function(e) {
+<<<<<<< HEAD
             console.log("push error = " + e.message);
         });
 
         push.on('notification', function(data) {
+=======
+            alert("push error = " + e.message);
+        });
+
+        push.on('notification', function(data) {
+            console.log('notification event');
+>>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
             navigator.notification.alert(
                 data.message,         // message
                 null,                 // callback

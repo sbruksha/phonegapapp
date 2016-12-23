@@ -31,7 +31,11 @@
                 "parents": {
                     "/resources": [
                         {
+<<<<<<< HEAD
                             "xml": "<string name=\"google_app_id\">80173982660</string>",
+=======
+                            "xml": "<string name=\"google_app_id\">﻿80173982660</string>",
+>>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
                             "count": 1
                         }
                     ]
@@ -121,7 +125,11 @@
             "PACKAGE_NAME": "com.eodessa.ratingsystem"
         },
         "phonegap-plugin-push": {
+<<<<<<< HEAD
             "SENDER_ID": "80173982660",
+=======
+            "SENDER_ID": "﻿80173982660",
+>>>>>>> 00f2a7a3d122c25ca504e267eb809d2c7731ebec
             "PACKAGE_NAME": "com.eodessa.ratingsystem"
         }
     },
