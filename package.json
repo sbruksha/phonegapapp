@@ -1,6 +1,6 @@
 {
   "name": "phonegapapp",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "> RatingSystem with PhoneGap",
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   "homepage": "https://github.com/sbruksha/phonegapapp",
   "dependencies": {
     "cordova-custom-config": "^3.1.2",
-    "phonegap-plugin-push": "^1.8.1"
+    "phonegap-plugin-push": "^1.9.2"
   }
 }
