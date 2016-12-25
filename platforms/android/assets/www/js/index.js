@@ -64,7 +64,7 @@ var app = {
 
             var u = "https://www.rating-system.com/webservice/RatingService.svc/SubscribeToNotification";
             $$.ajax({
-                type: "POST", url: u, data: "{\"Company\":\"1\",\"Endpoint\":\"" + data.registrationId + "\",\"Type\":\"﻿GCMAndroid\"}", contentType: "application/json; charset=utf-8", dataType: "json",
+                type: "POST", url: u, data: "{\"Company\":\"1\",\"Type\":\"GCMAndroid\",\"Endpoint\":\"" + data.registrationId + "\"}", contentType: "application/json; charset=utf-8", dataType: "json",
                 success: function (data) {
                     console.log(data.MessageText);
                 },
@@ -88,7 +88,7 @@ var app = {
 
         push.on('notification', function(data) {
             navigator.notification.alert(
-                data.message,         // message
+                data.additionalData.default,         // message
                 null,                 // callback
                 data.title,           // title
                 'Ok'                  // buttonName
