@@ -64,7 +64,7 @@ var app = {
 
             var u = "https://www.rating-system.com/webservice/RatingService.svc/SubscribeToNotification";
             $$.ajax({
-                type: "POST", url: u, data: "{\"Company\":\"1\",\"Endpoint\":\"" + data.registrationId + "\",\"Type\":\"ADM\"}", contentType: "application/json; charset=utf-8", dataType: "json",
+                type: "POST", url: u, data: "{\"Company\":\"1\",\"Endpoint\":\"" + data.registrationId + "\",\"Type\":\"﻿GCMAndroid\"}", contentType: "application/json; charset=utf-8", dataType: "json",
                 success: function (data) {
                     console.log(data.MessageText);
                 },
