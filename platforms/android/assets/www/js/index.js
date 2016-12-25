@@ -41,7 +41,7 @@ var app = {
         console.log('calling push init');
         var push = PushNotification.init({
             "android": {
-                "senderID": "﻿80173982660"
+                "senderID": "749475985020"
             },
             "browser": {},
             "ios": {
