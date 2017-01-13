@@ -24,7 +24,7 @@ var app = {
     onResume: function() {
         //app.receivedEvent('resume');
         RunApplication();
-        //window.open = cordova.InAppBrowser.open;
+        app.setupPush();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -55,7 +55,9 @@ var app = {
 
         push.on('registration', function(data) {
             console.log('registration event: ' + data.registrationId);
-
+            var companyid = "1";
+            var companyfromcookie = NotificationCompany('company');
+            if(companyfromcookie){companyid = companyfromcookie;}
             //var oldRegId = localStorage.getItem('registrationId');
             //if (oldRegId !== data.registrationId) {
             // Save new registration ID
@@ -64,9 +66,9 @@ var app = {
 
             var u = "https://www.rating-system.com/webservice/RatingService.svc/SubscribeToNotification";
             $$.ajax({
-                type: "POST", url: u, data: "{\"Company\":\"1\",\"Type\":\"APNS\",\"Endpoint\":\"" + data.registrationId + "\"}", contentType: "application/json; charset=utf-8", dataType: "json",
+                type: "POST", url: u, data: "{\"Company\":\""+companyid+"\",\"Type\":\"APNS\",\"Endpoint\":\"" + data.registrationId + "\"}", contentType: "application/json; charset=utf-8", dataType: "json",
                 success: function (data) {
-                    console.log(data.MessageText);
+                    console.log("Company:"+companyid+" Data:"+data.MessageText);
                 },
                 error: function (error) {
                     console.log('Error:'+JSON.stringify(error));
